@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Into the Wild: Embracing the Serenity of Camping",
+    "description": "Discover the peace and simplicity of life under the stars in the majestic wilderness of Banff."
+  },
+  {
+    "id": 2,
+    "title": "Santorini Dreams: A Journey Through Greece's Gem",
+    "description": "Explore the breathtaking beauty of Santorini, where every corner in Oia tells a story of its rich heritage and stunning vistas."
+  },
+  {
+    "id": 3,
+    "title": "City Skylines and Sailboats: Navigating Urban Waters",
+    "description": "Experience the thrill of sailing with a backdrop of towering skyscrapers and bustling city life in Sydney."
+  },
+  {
+    "id": 4,
+    "title": "Man and the Desert: A Solitary Journey Through Sand and Time",
+    "description": "Reflect on the vastness and silence of the desert, where solitude meets the soul in the heart of Dubai."
+  },
+  {
+    "id": 5,
+    "title": "Journey on the River: A Tranquil Escape by Boat",
+    "description": "Set sail on a serene river adventure along the Li River in Guilin, where nature's beauty unfolds with every bend."
+  },
+  {
+    "id": 6,
+    "title": "Mystical Temples of the East: A Spiritual Sojourn",
+    "description": "Delve into the sacred and ancient traditions of Asian temples, exploring the spiritual essence of Kyoto's Kinkaku-ji."
+  }
+]

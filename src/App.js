@@ -1,56 +1,16 @@
 import React, { useState } from "react"
 import "./App.css"
-const images = require.context("./images", false, /\.(png|jpe?g|svg)$/)
-const headerImage = images("./header.jpg")
+import BlogGallery from "./components/BlogGallery"
+import NavBar from "./components/NavBar"
+import Home from "./components/Home"
 
 
 function App() {
-  const [currentIndex, setCurrentIndex] = useState(0)
-
-  const blogPosts = [
-    { id: 1, title: "Blog Post 1", description: "Brief description of Blog Post 1", image: "post-image1.jpg" },
-    { id: 2, title: "Blog Post 2", description: "Brief description of Blog Post 2", image: "post-image2.jpg" },
-    { id: 3, title: "Blog Post 3", description: "Brief description of Blog Post 3", image: "post-image3.jpg" },
-    { id: 4, title: "Blog Post 4", description: "Brief description of Blog Post 4", image: "post-image4.jpg" },
-    { id: 5, title: "Blog Post 5", description: "Brief description of Blog Post 5", image: "post-image5.jpg" },
-    { id: 6, title: "Blog Post 6", description: "Brief description of Blog Post 6", image: "post-image6.jpg" }
-  ]
-
-  const handlePrev = () => {
-    setCurrentIndex(prevIndex => (prevIndex === 0 ? blogPosts.length - 3 : prevIndex - 1))
-  }
-
-  const handleNext = () => {
-    setCurrentIndex(prevIndex => (prevIndex === blogPosts.length - 3 ? 0 : prevIndex + 1))
-  }
-
   return (
     <div className='App'>
-      {/* Navigation Bar */}
-      <nav className='bg-gray-800 fixed w-full z-10 top-0 shadow-lg'>
-        <div className='container mx-auto px-6 py-3 flex justify-between items-center'>
-          <div className='text-white text-lg font-bold'>Sojourner</div>
-          <div className='flex space-x-4'>
-            <a href='#Home' className='text-gray-300 hover:text-white'>
-              Home
-            </a>
-            <a href='#Welcome' className='text-gray-300 hover:text-white'>
-              Welcome
-            </a>
-            <a href='#BlogGallery' className='text-gray-300 hover:text-white'>
-              Blog Gallery
-            </a>
-            <a href='#Contact' className='text-gray-300 hover:text-white'>
-              Contact
-            </a>
-          </div>
-        </div>
-      </nav>
+      <NavBar />
 
-      {/* Home Section */}
-      <section id='Home' className='flex items-center justify-center bg-cover bg-center' style={{ backgroundImage: `url(${headerImage})`, minHeight: "50vh", maxHeight: "500px" }}>
-        <h1 className='text-white text-5xl font-bold mt-80'>Welcome to Sojourner</h1>
-      </section>
+      <Home /> 
 
       {/* Welcome Section */}
       <section id='Welcome' className='py-20 bg-gray-100'>
@@ -63,37 +23,7 @@ function App() {
       </section>
 
       {/* Blog Gallery Section */}
-      <section id='BlogGallery' className='py-20 bg-white'>
-        <div className='container mx-auto text-center'>
-          <h2 className='text-3xl font-bold mb-12'>Latest Blog Posts</h2>
-          <div className='blog-gallery'></div>
-          <div className='flex justify-center items-center space-x-4'>
-            {/* Left Arrow */}
-            <button onClick={handlePrev} className='bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l'>
-              &lt;
-            </button>
-
-            {/* Blog Post Cards */}
-            <div className='flex space-x-4'>
-              {blogPosts.slice(currentIndex, currentIndex + 3).map((post, index) => (
-                <div key={post.id} className='max-w-sm rounded overflow-hidden shadow-lg'>
-                  {/* Map the image corresponding to the post */}
-                  <img src={images(`./blog${post.id}.jpg`)} alt={`Blog ${post.id}`} />
-                  <div className='px-6 py-4'>
-                    <div className='font-bold text-xl mb-2'>{post.title}</div>
-                    <p className='text-gray-700 text-base'>{post.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Right Arrow */}
-            <button onClick={handleNext} className='bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r'>
-              &gt;
-            </button>
-          </div>
-        </div>
-      </section>
+      <BlogGallery />
 
       {/* Contact Section */}
       <section id='Contact' className='py-20 bg-gray-100'>
@@ -126,14 +56,14 @@ function App() {
   )
 }
 
-function BlogGallery() {
-  return (
-    <div className='blog-gallery'>
-      {Array.from({ length: 6 }).map((_, index) => (
-        <img key={index} src={images(`./blog${index + 1}.jpg`)} alt={`Blog ${index + 1}`} />
-      ))}
-    </div>
-  )
-}
+// function BlogGallery() {
+//   return (
+//     <div className='blog-gallery'>
+//       {Array.from({ length: 6 }).map((_, index) => (
+//         <img key={index} src={images(`./blog${index + 1}.jpg`)} alt={`Blog ${index + 1}`} />
+//       ))}
+//     </div>
+//   )
+// }
 
 export default App
