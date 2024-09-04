@@ -16,7 +16,7 @@ function ContactForm() {
               <textarea className='shadow appearance-none rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' id='message' rows='5' placeholder='Your message'></textarea>
             </div>
             <div className='flex items-center justify-center'>
-              <button className='bg-black hover:bg-slate-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline' type='button'>
+              <button className='bg-black hover:bg-slate-600 text-white font-header font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline' type='button'>
                 Send Message
               </button>
             </div>

@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from "react-router-dom"
 import blogPosts from "../blogPosts.json"
 
 function BlogGallery() {
@@ -15,31 +16,33 @@ function BlogGallery() {
   }
 
   return (
-    <section id='BlogGallery' className='py-20 bg-white'>
+    <section id='BlogGallery' className='bg-white py-20'>
       <div className='container mx-auto text-center'>
         <h2 className='text-3xl font-extrabold mb-12'>Latest Blog Posts</h2>
 
         <div className='flex justify-center items-center space-x-4'>
           {/* Left Arrow */}
-          <button onClick={handlePrev} className='bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l'>
+          <button onClick={handlePrev} className='hover:bg-gray-200 text-gray-800 font-bold text-3xl py-2 px-4'>
             &lt;
           </button>
 
           {/* Blog Post Cards */}
           <div className='flex space-x-4'>
             {blogPosts.slice(currentIndex, currentIndex + 3).map(post => (
-              <div key={post.id} className='max-w-sm rounded overflow-hidden shadow-lg'>
-                <img src={images(`./blog${post.id}.jpg`)} alt={`Blog ${post.id}`} />
-                <div className='px-6 py-4'>
-                  <h3 className='font-bold text-xl mb-2'>{post.title}</h3>
-                  <p className='text-gray-700 text-base'>{post.description}</p>
-                </div>
+              <div key={post.id} className='max-w-sm overflow-hidden shadow-lg'>
+                <Link to={`/blog/${post.id}`} key={post.id} className='max-w-sm overflow-hidden shadow-lg'>
+                  <img src={images(`./blog${post.id}.jpg`)} alt={`Blog ${post.id}`} />
+                  <div className='px-10 py-12'>
+                    <h3 className='font-bold text-xl mb-2'>{post.title}</h3>
+                    <p className='text-gray-700 text-base'>{post.description}</p>
+                  </div>
+                </Link>
               </div>
             ))}
           </div>
 
           {/* Right Arrow */}
-          <button onClick={handleNext} className='bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r'>
+          <button onClick={handleNext} className='hover:bg-gray-200 text-gray-800 font-bold text-3xl py-2 px-4'>
             &gt;
           </button>
         </div>

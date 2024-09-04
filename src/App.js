@@ -7,21 +7,22 @@ import Welcome from "./components/Welcome"
 import BlogGallery from "./components/BlogGallery"
 import ContactForm from "./components/Contact"
 import Footer from "./components/Footer"
-import BlogPost from "./BlogPost"
+import BlogPost from "./components/BlogPost"
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <div className='App'>
-          <NavBar />
-          <Home />
-          <Welcome />
-          <BlogGallery />
-          <ContactForm />
-          <Footer />
-        </div>
-      </Routes>
+      <div className='App'>
+        <NavBar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/welcome' element={<Welcome />} />
+          <Route path='/blog-gallery' element={<BlogGallery />} />
+          <Route path='/contact' element={<ContactForm />} />
+          <Route path='/blog/:id' element={<BlogPost />} />
+        </Routes>
+        <Footer />
+      </div>
     </Router>
   )
 }

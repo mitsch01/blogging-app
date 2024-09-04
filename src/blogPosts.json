@@ -1,32 +1,50 @@
 [
   {
     "id": 1,
-    "title": "Into the Wild: Embracing the Serenity of Camping",
-    "description": "Discover the peace and simplicity of life under the stars in the majestic wilderness of Banff."
+    "title": "Banff: My Favorite Place in the Rockies",
+    "description": "Experiencing the tranquility of camping under the stars in Banff National Park.",
+    "content": "Banff has always held a special place in my heart. Setting up camp beneath the vast, starry sky was an experience like no other. The quiet of the forest and the cool night air were perfect for unwinding. Every morning, waking up to the sight of the towering Rockies and the crisp mountain air was a gentle reminder of nature's beauty. It’s a place where you can truly disconnect and find peace.",
+    "titleImage": "blog1-title.jpg",
+    "images": ["blog1-1.jpg", "blog1-2.jpg", "blog1-3.jpg", "blog1-4.jpg", "blog1-5.jpg", "blog1-6.jpg", "blog1-7.jpg", "blog1-8.jpg", "blog1-9.jpg", "blog1-10.jpg"]
   },
   {
     "id": 2,
-    "title": "Santorini Dreams: A Journey Through Greece's Gem",
-    "description": "Explore the breathtaking beauty of Santorini, where every corner in Oia tells a story of its rich heritage and stunning vistas."
+    "title": "Santorini: The Beauty of Oia",
+    "description": "Exploring the stunning views and charm of Santorini’s Oia.",
+    "content": "Santorini was a dream come true. The charm of Oia with its white-washed buildings and blue domes was mesmerizing. Wandering through the narrow streets, I was struck by the breathtaking views of the Aegean Sea. Each sunset was a magical moment, painting the sky with colors I’d never seen before. It was a place that felt both serene and vibrant, a perfect escape from everyday life.",
+    "titleImage": "blog2-title.jpg",
+    "images": ["blog2-1.jpg", "blog2-2.jpg", "blog2-3.jpg", "blog2-4.jpg", "blog2-5.jpg", "blog2-6.jpg", "blog2-7.jpg", "blog2-8.jpg", "blog2-9.jpg", "blog2-10.jpg"]
   },
   {
     "id": 3,
-    "title": "City Skylines and Sailboats: Navigating Urban Waters",
-    "description": "Experience the thrill of sailing with a backdrop of towering skyscrapers and bustling city life in Sydney."
+    "title": "Sydney Harbour: Sailing and Cityscapes",
+    "description": "Sailing around Sydney Harbour with the iconic city skyline in view.",
+    "content": "Sailing around Sydney Harbour was a highlight of my trip. The view of the city skyline, with its iconic landmarks, was stunning from the water. The experience of gliding through the harbor, feeling the wind and seeing the city from a new perspective, was unforgettable. It’s amazing how the energy of the city contrasts with the calm of the harbor. A perfect blend of urban and natural beauty.",
+    "titleImage": "blog3-title.jpg",
+    "images": ["blog3-1.jpg", "blog3-2.jpg", "blog3-3.jpg", "blog3-4.jpg", "blog3-5.jpg", "blog3-6.jpg", "blog3-7.jpg", "blog3-8.jpg", "blog3-9.jpg", "blog3-10.jpg"]
   },
   {
     "id": 4,
-    "title": "Man and the Desert: A Solitary Journey Through Sand and Time",
-    "description": "Reflect on the vastness and silence of the desert, where solitude meets the soul in the heart of Dubai."
+    "title": "Dubai Desert: A Quiet Retreat",
+    "description": "Finding solitude and reflection in the vast Dubai desert.",
+    "content": "The Dubai desert was an incredible escape. The sheer vastness of the sand dunes and the silence of the desert made for a peaceful retreat. As the sun set, the desert transformed into a golden sea, and the tranquility of the night was both humbling and refreshing. It’s a place that allows you to slow down and reconnect with yourself, far from the busy city life.",
+    "titleImage": "blog4-title.jpg",
+    "images": ["blog4-1.jpg", "blog4-2.jpg", "blog4-3.jpg", "blog4-4.jpg", "blog4-5.jpg", "blog4-6.jpg", "blog4-7.jpg", "blog4-8.jpg", "blog4-9.jpg", "blog4-10.jpg"]
   },
   {
     "id": 5,
-    "title": "Journey on the River: A Tranquil Escape by Boat",
-    "description": "Set sail on a serene river adventure along the Li River in Guilin, where nature's beauty unfolds with every bend."
+    "title": "Guilin: A River Adventure",
+    "description": "Savoring a peaceful boat ride along the picturesque Li River.",
+    "content": "Cruising along the Li River in Guilin was a serene experience. The river’s landscape, with its dramatic karst formations and lush greenery, was breathtaking. Each bend in the river revealed a new view, and the gentle sway of the boat made for a relaxing journey. It was a wonderful way to enjoy nature’s beauty and escape the hustle and bustle of everyday life.",
+    "titleImage": "blog5-title.jpg",
+    "images": ["blog5-1.jpg", "blog5-2.jpg", "blog5-3.jpg", "blog5-4.jpg", "blog5-5.jpg", "blog5-6.jpg", "blog5-7.jpg", "blog5-8.jpg", "blog5-9.jpg", "blog5-10.jpg"]
   },
   {
     "id": 6,
-    "title": "Mystical Temples of the East: A Spiritual Sojourn",
-    "description": "Delve into the sacred and ancient traditions of Asian temples, exploring the spiritual essence of Kyoto's Kinkaku-ji."
+    "title": "Kyoto Temples: A Spiritual Journey",
+    "description": "Discovering the peace and history of Kyoto’s ancient temples.",
+    "content": "Exploring the temples of Kyoto was a deeply moving experience. Each temple offered a glimpse into Japan’s spiritual heritage, with serene gardens and intricate architecture. The peaceful atmosphere of places like Kinkaku-ji provided a perfect setting for reflection. It was a journey through history and tranquility, where every visit felt like stepping back in time.",
+    "titleImage": "blog6-title.jpg",
+    "images": ["blog6-1.jpg", "blog6-2.jpg", "blog6-3.jpg", "blog6-4.jpg", "blog6-5.jpg", "blog6-6.jpg", "blog6-7.jpg", "blog6-8.jpg", "blog6-9.jpg", "blog6-10.jpg"]
   }
 ]
