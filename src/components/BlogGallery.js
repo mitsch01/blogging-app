@@ -7,11 +7,11 @@ function BlogGallery() {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const handlePrev = () => {
-    setCurrentIndex(prevIndex => (prevIndex === 0 ? blogPosts.length - 3 : prevIndex - 3))
+    setCurrentIndex(prevIndex => (prevIndex === 0 ? blogPosts.length - 3 : prevIndex - 1))
   }
 
   const handleNext = () => {
-    setCurrentIndex(prevIndex => (prevIndex === blogPosts.length - 3 ? 0 : prevIndex + 3))
+    setCurrentIndex(prevIndex => (prevIndex === blogPosts.length - 3 ? 0 : prevIndex + 1))
   }
 
   return (

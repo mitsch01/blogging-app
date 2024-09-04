@@ -1,5 +1,4 @@
 import React from "react"
-import Header from "../images/header"
 
 function Home() {
   return (
@@ -7,11 +6,11 @@ function Home() {
       id='Home'
       className='flex items-center justify-center bg-cover bg-center'
       style={{
-        backgroundImage: `url(${Header})`,
+        backgroundImage: `url(/images/header.jpg)`,
         minHeight: "50vh",
         maxHeight: "500px"
       }}>
-      <h1 className='text-white text-5xl font-bold mt-80'>Welcome to Sojourner</h1>
+      <h1 className='text-white text-8xl font-bold mt-80'>Sojourner</h1>
     </section>
   )
 }
