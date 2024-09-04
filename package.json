@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fontsource/lora": "^5.0.18",
     "@fontsource/merriweather": "^5.0.14",
+    "@fontsource/poppins": "^5.0.15",
+    "@fontsource/source-sans-3": "^5.0.21",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",

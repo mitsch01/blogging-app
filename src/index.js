@@ -3,7 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import "@fontsource/merriweather"
+import "@fontsource/lora"
+import "@fontsource/source-sans-3"; // Defaults to weight 400
+import "@fontsource/source-sans-3/400.css"; // Import specific weight
+import "@fontsource/source-sans-3/700.css"; // Import bold weight
+import "@fontsource/source-sans-3/900.css"; // Import black weight
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,5 +1,5 @@
 body {
-  font-family: 'Merriweather', sans-serif;
+  font-family: 'Lora', sans-serif;
 }
 
 .App {
@@ -15,4 +15,8 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+h2 {
+  font-family: 'Source Sans Pro', 'sans-serif';
 }
