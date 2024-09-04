@@ -17,7 +17,7 @@ function BlogGallery() {
   return (
     <section id='BlogGallery' className='py-20 bg-white'>
       <div className='container mx-auto text-center'>
-        <h2 className='text-3xl font-bold mb-12'>Latest Blog Posts</h2>
+        <h2 className='text-3xl font-extrabold mb-12'>Latest Blog Posts</h2>
 
         <div className='flex justify-center items-center space-x-4'>
           {/* Left Arrow */}
@@ -31,7 +31,7 @@ function BlogGallery() {
               <div key={post.id} className='max-w-sm rounded overflow-hidden shadow-lg'>
                 <img src={images(`./blog${post.id}.jpg`)} alt={`Blog ${post.id}`} />
                 <div className='px-6 py-4'>
-                  <div className='font-bold text-xl mb-2'>{post.title}</div>
+                  <h3 className='font-bold text-xl mb-2'>{post.title}</h3>
                   <p className='text-gray-700 text-base'>{post.description}</p>
                 </div>
               </div>

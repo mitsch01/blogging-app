@@ -1,15 +1,19 @@
+// tailwind.config.js
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
-  darkMode: false,
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
     extend: {
       fontFamily: {
-        lora: ["Lora", "sans-serif"]
+        header: ['"Source Sans 3"', "sans-serif"],
+        body: ["Lora", "serif"],
+        title: ['"Pacifico"', "cursive"]
+      },
+      fontWeight: {
+        bold: 700,
+        normal: 400
       }
     }
-  },
-  variants: {
-    extend: {}
   },
   plugins: []
 }

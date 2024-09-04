@@ -10,7 +10,7 @@ function Home() {
         minHeight: "50vh",
         maxHeight: "500px"
       }}>
-      <h1 className='text-white text-8xl font-bold mt-80'>Sojourner</h1>
+      <h1 className=' font-title text-white text-8xl mt-[25%]'>Sojourner</h1>
     </section>
   )
 }

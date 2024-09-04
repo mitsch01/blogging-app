@@ -15,3 +15,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Apply Source Sans 3 Bold to all headers */
+h1, h2, h3 {
+  @apply font-header font-bold;
+}
+
+/* Apply Lora Normal to all paragraphs and spans */
+p, span, div, a {
+  @apply font-body font-normal;
+}
